@@ -10,6 +10,7 @@ public class HomePage extends Page {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+
     public RegisterPage clickRegister() {
         buttonClick(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a"));
         return new RegisterPage(driver);

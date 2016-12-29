@@ -12,8 +12,8 @@ public class SignOnPage extends Page {
     }
 
     public FlightFinderPage logIn() {
-        insertText(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[1]/td[2]/input"),"chrismem");
-        insertText(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/input"), "12345678");
+        insertText(By.name("userName"), "chrismem");
+        insertText(By.name("password"), "12345678");
         buttonClick(By.name("login"));
         return new FlightFinderPage(driver);
     }

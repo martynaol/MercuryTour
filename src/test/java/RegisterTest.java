@@ -12,15 +12,15 @@ import static org.junit.Assert.assertTrue;
 public class RegisterTest extends SourceTest {
 
     @Test
-    public void shouldRegisterAccount(){
+    public void shouldRegisterAccount() {
 
         HomePage homePage = new HomePage(driver);
 
-           RegisterPage registerPage = homePage.clickRegister();
+        RegisterPage registerPage = homePage.clickRegister();
 
-           ConfirmPage confirmPage = registerPage.accountCreat();
+        ConfirmPage confirmPage = registerPage.accountCreat();
 
-        assertEquals("Dear Chris Obama,",confirmPage.confirmReiestration());
+        assertEquals("Dear Chris Obama,", confirmPage.confirmReiestration());
 
     }
 }

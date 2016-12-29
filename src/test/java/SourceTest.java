@@ -1,5 +1,6 @@
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -26,7 +27,7 @@ public class SourceTest {
     @After
     public void tearDown() throws Exception {
         Thread.sleep(5000);
-        driver.quit();
+        //driver.quit();
     }
 }
 
