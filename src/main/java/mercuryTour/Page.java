@@ -50,7 +50,7 @@ public class Page {
     public String getValueOnFromPage(By month1, By day1) {
         String month = driver.findElement(month1).getAttribute("value");
         String day = driver.findElement(day1).getAttribute("value");
-        String year = "2016";
+        String year = "2017";
         String date = month + "/" + day + "/" + year;
         return date;
     }
@@ -58,7 +58,7 @@ public class Page {
     public String getValueInFromPage(By month1, By day1) {
         String month = driver.findElement(month1).getAttribute("value");
         String day = driver.findElement(day1).getAttribute("value");
-        String year = "2016";
+        String year = "2017";
         String date = month + "/" + day + "/" + year;
         return date;
     }

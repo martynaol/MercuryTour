@@ -21,4 +21,8 @@ public class HomePage extends Page {
         buttonClick(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td[1]/a"));
         return new SignOnPage(driver);
     }
+    public boolean confirmBackToHome(){
+        Boolean element =driver.getPageSource().contains("Welcome: Mercury Tours");
+        return  element;
+    }
 }

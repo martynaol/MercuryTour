@@ -22,4 +22,18 @@ public class ConfirmPage extends Page {
         return text;
     }
 
+    public SignOnPage logOut(){
+       buttonClick(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[3]/a/img"));
+       return new SignOnPage(driver);
+    }
+
+    public FlightFinderPage backToFlight() {
+        buttonClick(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[1]/a/img"));
+        return new FlightFinderPage(driver);
+    }
+
+    public HomePage backToHome() {
+        buttonClick(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr[1]/td[2]/table/tbody/tr[7]/td/table/tbody/tr/td[2]/a/img"));
+        return new HomePage(driver);
+    }
 }

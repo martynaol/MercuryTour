@@ -27,7 +27,7 @@ public class FlightFinderPage extends Page {
         droplistRandomSelect(By.name("airline"));
 
         buttonClick(By.name("findFlights"));
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
         return new SelectFlightPage(driver);
     }
@@ -39,6 +39,11 @@ public class FlightFinderPage extends Page {
     public String confirmValueInFlight() {
         return getValueInFromPage(By.name("toMonth"), By.name("toDay"));
     }
+    public boolean confirmFlightBack(){
+        Boolean element = driver.getPageSource().contains("Use our Flight Finder");
+        return element;
+    }
+
 
 
 }
